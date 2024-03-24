@@ -1,0 +1,58 @@
+.hero-section {
+  object-fit: cover;
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 50vw;
+  object-position: -50% -15rem;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 12vw;
+  top: 20vh;
+}
+
+.create {
+  border: none;
+  border-radius:20px;
+  padding: 10px;
+  text-shadow: 3px 3px 1px #ff7300;
+}
+
+.hero-text-1 {
+  font-family: Major Mono Display;
+  font-size: 4rem;
+  width: 12ch;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.hero-text-2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Gloria Hallelujah;
+  font-weight: 500;
+
+}
+
+.unique-text {
+  color: white;
+  animation-name: text-animation;
+  animation-duration: 10s;
+  animation-timing-function: cubic-bezier(.96,-0.03,.02,.26);
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes text-animation {
+  0% {color: white;}
+  50% {color: #ff7300;}
+  100% {color: white;}
+}
