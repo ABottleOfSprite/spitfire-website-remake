@@ -3,9 +3,10 @@
 .cards-section {
   background-color: #111111;
   position: relative;
-  padding-bottom: 500px;
-  overflow-x: hidden;
   border-radius: 20px;
+  height: fit-content;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 ::-webkit-scrollbar {
@@ -28,7 +29,6 @@
 }
 
 .container {
-  padding-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, 20rem);
   justify-content:center;
@@ -153,3 +153,34 @@
   margin-bottom: -4px;
 }
 
+.offers-button {
+  background-color: #000000;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(78, 78, 78);
+  font-size: 0.6rem;
+  letter-spacing: .2px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.offers-button:hover {
+  background-color: #000000;
+  background: linear-gradient(to right, black, #ff730015);
+  border: 1px solid #5c5c5c;
+  color: #999999;
+  font-size: 0.6rem;
+  letter-spacing: .5px;
+  cursor: pointer;
+  
+}
+
+.offers-button-container {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
